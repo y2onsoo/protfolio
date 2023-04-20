@@ -1,0 +1,330 @@
+body {
+  background-color: black;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.wrap{}
+/*********************************************************
+                    input 스타일
+*********************************************************/
+.input-wrap{
+  position: absolute;
+  top: 20%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+input{
+  width: 500px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow:0px 0px 8px 4px rgba(224,193,232,0.5);
+  -moz-box-shadow: 0px 0px 8px 4px rgba(224,193,232,0.5);
+  box-shadow: 0px 0px 8px 4px rgba(224,193,232,0.5);
+  background-color: #000;
+  caret-color: #C3FF13;
+  
+}
+
+input::placeholder{
+  font-size: 16px;
+}
+
+input:focus{
+  outline: none;
+}
+
+#result{
+  background-color: #fff;
+}
+
+
+
+
+
+
+/*********************************************************
+                    키보드 스타일
+*********************************************************/
+.keyboard-wrap{
+  margin-bottom:-20%;
+}
+
+h1{
+  text-align: center;
+}
+
+.title {
+  color: mintcream;
+  text-transform: uppercase;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  font-size: 1em;
+  letter-spacing: 0.3em;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  list-style: none;
+  display: flex;
+}
+
+li {
+  height: 3em;
+  width: 3em;
+  color: #fff;
+  border-radius: 0.4em;
+  line-height: 3em;
+  letter-spacing: 1px;
+  margin: 0.4em;
+  transition: 0.3s;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+#tab {
+  width: 5em;
+}
+
+#caps {
+  width: 6em;
+}
+
+#left-shift {
+  width: 8em;
+}
+
+#enter {
+  width: 6em;
+}
+
+#right-shift {
+  width: 8em;
+}
+
+#back {
+  width: 5em;
+}
+
+.pinky { 
+  background-color: #2B2B35;
+  border: 2px solid #FF0048;
+}
+.pinky.selected {
+  color: #FF0048;
+}
+
+.ring { 
+  background-color:#2B2B35;
+  border: 2px solid #F57801;
+}
+.ring.selected {
+  color: #F57801;
+}
+
+.middle { 
+  background-color:#2B2B35;
+  border: 2px solid #C3FF13;
+}
+.middle.selected {
+  color:#C3FF13;
+}
+
+.pointer1st { 
+  background-color:#2B2B35;
+  border: 2px solid #8E03F3;
+}
+.pointer1st.selected {
+  color:#8E03F3;
+}
+
+.pointer2nd { 
+  background-color:#2B2B35;
+  border: 2px solid #FF00A4;
+}
+.pointer2nd.selected {
+  color:#FF00A4;
+}
+
+li.border{
+  -webkit-box-shadow:0px 0px 8px 4px rgba(204,62,240,0.5);
+  -moz-box-shadow: 0px 0px 8px 4px rgba(204,62,240,0.5);
+  box-shadow: 0px 0px 8px 4px rgba(204,62,240,0.5);
+}
+
+.fill-out-key {
+  background-color:#2B2B35;
+  border: 2px solid slategrey;
+}
+
+.selected {
+  background-color: transparent;
+  	-webkit-animation: vibrate-1 0.3s linear infinite both;
+	        animation: vibrate-1 0.3s linear infinite both;
+}
+
+/*********************************************************
+                    키보드  애니메이션효과
+*******************************************************/
+.hit {
+	-webkit-animation: hit 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: hit 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes hit {
+  0% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes hit {
+  0% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+@keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+/********************************************************
+                      alert디자인
+**********************************************************/
+#alert-box{
+  background-color:#fff;
+  padding: 20px;
+  color: #000;
+  border-radius: 5px;
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  /* display: none; */
+}
+
+#spinner{
+  width: 40px;
+  height: 40px;
+  border: 5px solid rgba(255,255,255,.1);
+  border-right: 5px solid #1dab1d;
+  border-radius: 50%;
+  animation: spinner 1s linear infinite;
+  margin-bottom: 50px;
+  margin-left: 40%;
+  margin-top:30px;
+}
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  } to {
+    transform: rotate(360deg);
+  }
+}
+
+
+#alert-box h2{
+  text-align: center;
+  font-size: 30px;
+  color: #333;
+  font-weight: bold;
+}
+
+#alert-box p{
+  text-align: center;
+  font-size: 16px;
+}
+
+#alert-box span{
+  font-size: 18px;
+  font-weight: bold;
+  color:#008001;
+}
+
+#alert-box button{
+  width:150px;
+  height: 40px;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
+  background-color: #2b78c0;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.dn{
+  display: none;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>keyboard</title>
+    <!--css연결-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!--script 연결-->
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <!-------------------------------------------------------
+                        input box
+      --------------------------------------------------------->
+      <div class="input-wrap">
+        <input id="name" onkeyup="printName()" placeholder="빛나는 알파벳을 입력해주세요." autofocus />
+        <div id="result"></div>
+      </div>
+      <!-------------------------------------------------------
+                        키보드
+      --------------------------------------------------------->
+      <div class="keyboard-wrap">
+        <h1 class="title">Eyes on the screen</h1>
+        <div class="keyboard">
+          <ul class="row row-0">
+            <li class="pinky border" id="esc">ESC</li>
+            <li class="pinky border" id="1">1</li>
+            <li class="ring border" id="2">2</li>
+            <li class="middle border" id="3">3</li>
+            <li class="pointer1st border" id="4">4</li>
+            <li class="pointer2nd border" id="5">5</li>
+            <li class="pointer2nd border" id="6">6</li>
+            <li class="pointer1st border" id="7">7</li>
+            <li class="middle border" id="8">8</li>
+            <li class="ring border" id="9">9</li>
+            <li class="pinky border" id="0">0</li>
+            <li class="pinky border">-</li>
+            <li class="pinky border">+</li>
+            <li class="pinky border" id="back">BACK</li>
+          </ul>
+          <ul class="row row-1">
+            <li class="pinky border" id="tab">TAB</li>
+            <li class="pinky border" id="Q">Q</li>
+            <li class="ring border" id="W">W</li>
+            <li class="middle border" id="E">E</li>
+            <li class="pointer1st border" id="R">R</li>
+            <li class="pointer2nd border" id="T">T</li>
+            <li class="pointer2nd border" id="Y">Y</li>
+            <li class="pointer1st border" id="U">U</li>
+            <li class="middle border" id="I">I</li>
+            <li class="ring border" id="O">O</li>
+            <li class="pinky border" id="P">P</li>
+            <li class="pinky border">[</li>
+            <li class="pinky border">]</li>
+            <li class="pinky border">\</li>
+          </ul>
+          <ul class="row row-2">
+            <li class="pinky border" id="caps">CAPS</li>
+            <li class="pinky border" id="A">A</li>
+            <li class="ring border" id="S">S</li>
+            <li class="middle border" id="D">D</li>
+            <li class="pointer1st border" id="F">F</li>
+            <li class="pointer2nd border" id="G">G</li>
+            <li class="pointer2nd border" id="H">H</li>
+            <li class="pointer1st border" id="J">J</li>
+            <li class="middle border" id="K">K</li>
+            <li class="ring border" id="L">L</li>
+            <li class="pinky border">:</li>
+            <li class="pinky border">''</li>
+            <li class="pinky border" id="enter">ENTER</li>
+          </ul>
+          <ul class="row row-3">
+            <li class="pinky border" id="left-shift">SHIFT</li>
+            <li class="pinky border" id="Z">Z</li>
+            <li class="ring border" id="X">X</li>
+            <li class="middle border" id="C">C</li>
+            <li class="pointer1st border" id="V">V</li>
+            <li class="pointer2nd border" id="B">B</li>
+            <li class="pointer2nd border" id="N">N</li>
+            <li class="pointer1st border" id="M">M</li>
+            <li class="middle border">,</li>
+            <li class="ring border">.</li>
+            <li class="pinky border">;</li>
+            <li class="pinky border" id="right-shift">SHIFT</li>
+          </ul>
+        </div>
+        <h1 class="title">Hands on the keyboard</h1>
+      </div>
+      <!--alert 디자인 -->
+      <div id="alert-box" class="dn">
+        <div id="spinner"></div>
+        <h2>Success</h2>
+        <p><span>sooou</span>의 <span>메인페이지</span>로 이동하시겠습니까?</p>
+        <button id="alert-btn" onclick="newPage()">OK</button>
+      </div>
+    </div>
+  </body>
+</html>
