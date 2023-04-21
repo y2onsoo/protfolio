@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>keyboard</title>
     <!--css연결-->
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css" />
     <!--script 연결-->
     <script src="js/script.js" defer></script>
@@ -16,14 +17,14 @@
                         input box
       --------------------------------------------------------->
       <div class="input-wrap">
-        <input id="name" onkeyup="printName()" placeholder="빛나는 알파벳을 입력해주세요." autofocus />
         <div id="result"></div>
+        <input id="name" onkeyup="printName()" placeholder="빛나는 알파벳을 입력해주세요." autofocus />
       </div>
       <!-------------------------------------------------------
                         키보드
       --------------------------------------------------------->
       <div class="keyboard-wrap">
-        <h1 class="title">Eyes on the screen</h1>
+        <!-- <h1 class="title">Eyes on the screen</h1> -->
         <div class="keyboard">
           <ul class="row row-0">
             <li class="pinky border" id="esc">ESC</li>
@@ -87,7 +88,7 @@
             <li class="pinky border" id="right-shift">SHIFT</li>
           </ul>
         </div>
-        <h1 class="title">Hands on the keyboard</h1>
+        <!-- <h1 class="title">Hands on the keyboard</h1> -->
       </div>
       <!--alert 디자인 -->
       <div id="alert-box" class="dn">
