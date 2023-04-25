@@ -1,0 +1,56 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* body {
+  background-image: url(../images/Design\ 5.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* background-color: #BF83A1; }*/
+
+
+.bg-wrap {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/main-bg.png);
+  position: relative;
+}
+
+.bg-wrap .cloud{
+  position: absolute;
+  bottom: 0;
+  width:100%;
+  height: 400px;
+}
+
+.bg-wrap .table{
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
+  height: 600px;
+}
+
+.bg-wrap .minicloud{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.bg-wrap .plant{
+  height: 200px;
+  position: absolute;
+  bottom:0;
+  left: 30%;
+  transform: translateX(-30%);
+}
+
+.bg-wrap .box{
+  height: 300px;
+}
