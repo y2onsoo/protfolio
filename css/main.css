@@ -2,17 +2,8 @@ html,
 body {
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
-
-/* body {
-  background-image: url(../images/Design\ 5.png);
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  /* background-color: #BF83A1; }*/
-
 
 .bg-wrap {
   width: 100%;
@@ -70,6 +61,7 @@ body {
   display: flex;
   /* background-color: bisque; */
   left: 50%;
+  top: 5%;
   transform: translateX(-50%);
 }
 
@@ -77,6 +69,51 @@ body {
   height: 250px;
 }
 
-.bg-wrap .textbox{
-  bac
+.bg-wrap .album .textbox1{
+  animation:folder 1500ms;
+  position: relative;
 }
+.bg-wrap .album .textbox1 img:nth-child(2){
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.bg-wrap .album .textbox2 .img2-b,
+.bg-wrap .album .textbox3 .img3-b,
+.bg-wrap .album .textbox4 .img4-b,
+.bg-wrap .album .textbox5 .img5-b{
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.bg-wrap .album .textbox2{
+  animation:folder 2000ms;
+  position: relative;
+}
+.bg-wrap .album .textbox3{
+  animation:folder 2500ms;
+  position: relative;
+}
+.bg-wrap .album .textbox4{
+  animation:folder 3000ms;
+  position: relative;
+}
+.bg-wrap .album .textbox5{
+  animation:folder 3500ms;
+  position: relative;
+}
+@keyframes folder{
+  from{
+  transform:translateY(-100%);
+  }
+  to{
+  transform:translateY(0%);
+  }
+}
+
+
+
