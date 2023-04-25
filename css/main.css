@@ -53,4 +53,30 @@ body {
 
 .bg-wrap .box{
   height: 300px;
+  position: absolute;
+  bottom: -10%;
+  right: 20%;
+}
+
+/* .bg-wrap .memo{
+  width: 400px;
+  position: absolute;
+  right: 30%;
+  top: 20%;
+} */
+
+.bg-wrap .album {
+  position: absolute;
+  display: flex;
+  /* background-color: bisque; */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bg-wrap .textbox{
+  height: 250px;
+}
+
+.bg-wrap .textbox{
+  bac
 }
