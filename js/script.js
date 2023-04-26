@@ -32,8 +32,8 @@ function getRandomNumber(min, max) {
 }
 //alert 확인버튼 클릭시 main.html로 이동
 function newPage()  {
-  // window.location = "/main.html"; //현재창에서 페이지이동
-  window.open("/main.html"); //새창으로 열림
+  window.location = "/main.html"; //현재창에서 페이지이동
+  // window.open("/main.html"); //새창으로 열림
 }
 
 //영문자로 반환
