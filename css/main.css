@@ -60,7 +60,7 @@ body {
 .bg-wrap .album {
   position: absolute;
   display: flex;
-  background-color: bisque;
+  /* background-color: bisque; */
   left: 50%;
   top: 5%;
   transform: translateX(-50%);
