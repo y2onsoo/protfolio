@@ -210,8 +210,16 @@ input[type="checkbox"]:checked ~ .text {
   position: absolute;
   top: 50%;
   left: 90%;
-
 }
+
+.memo-img-blue a img:hover{
+  transform: scale(1.1);
+}
+
+.memo-img-red a img:hover{
+  transform: scale(1.1);
+}
+
 .memo-img-red a img{
   object-fit: cover;
   width: 400px;
