@@ -1,45 +1,113 @@
-@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Noto+Sans+KR&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Noto+Sans+KR&display=swap");
 
-.wrap{
+.wrap {
   width: 100%;
   height: 100%;
   padding: 100px;
   background-color: rgb(240, 247, 207);
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
-header{
+header {
   width: 100%;
   height: 150px;
   background-color: rgb(115, 160, 199);
   margin-bottom: 20px;
 }
-.contents-wrap{
+.contents-wrap {
   width: 100%;
   display: flex;
   justify-content: space-between;
   flex-flow: wrap;
 }
 
-.contents-wrap .box{
+.contents-wrap .box {
   width: 400px;
   height: 400px;
   background-color: rgb(202, 148, 77);
   margin-bottom: 30px;
 }
 
-.contents-wrap .box1 img,
-.contents-wrap .box2 img,
-.contents-wrap .box3 img,
-.contents-wrap .box4 img,
-.contents-wrap .box5 img,
-.contents-wrap .box6 img,
-.contents-wrap .box7 img,
-.contents-wrap .box8 img,
-.contents-wrap .box9 img,
-.contents-wrap .box10 img,
-.contents-wrap .box11 img,
-.contents-wrap .box12 img{
+.contents-wrap .box1 > img,
+.contents-wrap .box2 > img,
+.contents-wrap .box3 > img,
+.contents-wrap .box4 > img,
+.contents-wrap .box5 > img,
+.contents-wrap .box6 > img,
+.contents-wrap .box7 > img,
+.contents-wrap .box8 > img,
+.contents-wrap .box9 > img,
+.contents-wrap .box10 > img,
+.contents-wrap .box11 > img,
+.contents-wrap .box12 > img {
   width: 400px;
   height: 400px;
   object-fit: cover;
+}
+
+.box-bg::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.contents-wrap .box1 .big-1,
+.contents-wrap .box2 .big-2,
+.contents-wrap .box3 .big-3
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 800px;
+  object-fit: cover;
+  background-image: url(../images/banner-1.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: 100;
+  display: none;
+}
+.contents-wrap .box2 .big-2{
+  background-image: url(../images/banner-5.jpg);
+}
+.contents-wrap .box3 .big-3{
+  background-image: url(../images/banner-3.jpg);
+}
+
+.contents-wrap .box1 .big-1 button,
+.contents-wrap .box2 .big-2 button,
+.contents-wrap .box3 .big-3 button
+{
+  float: right;
+  width: 50px;
+  height: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  border: 3px solid #fe8d02;
+  background-color: transparent;
+}
+.contents-wrap .box2 .big-2 button{
+  border: 3px solid #565237;
+}
+.contents-wrap .box3 .big-3 button{
+  border: 3px solid #1a1f26;
+}
+
+.contents-wrap .box1 .big-1 button i,
+.contents-wrap .box2 .big-2 button i,
+.contents-wrap .box3 .big-3 button i
+{
+  font-size: 30px;
+  color: #fe8d02;
+}
+.contents-wrap .box2 .big-2 button i{
+  color: #565237;
+}
+.contents-wrap .box3 .big-3 button i{
+  color: #1a1f26;
 }
