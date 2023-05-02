@@ -54,10 +54,11 @@ header {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-
+/*배너 1번째 row*/
 .contents-wrap .box1 .big-1,
 .contents-wrap .box2 .big-2,
-.contents-wrap .box3 .big-3
+.contents-wrap .box3 .big-3,
+.contents-wrap .box4 .big-4
 {
   position: absolute;
   top: 50%;
@@ -78,10 +79,35 @@ header {
 .contents-wrap .box3 .big-3{
   background-image: url(../images/banner-3.jpg);
 }
+.contents-wrap .box4 .big-4{
+  background-image: url(../images/banner-4.jpg);
+}
+/*배너 2번째 row*/
+.contents-wrap .box5 .big-5,
+.contents-wrap .box6 .big-6{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 800px;
+  height: 800px;
+  object-fit: cover;
+  background-image: url(../images/banner-2.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: 100;
+  display: none;
+}
+.contents-wrap .box6 .big-6{
+  background-image: url(../images/banner-6.jpg);
+}
 
 .contents-wrap .box1 .big-1 button,
 .contents-wrap .box2 .big-2 button,
-.contents-wrap .box3 .big-3 button
+.contents-wrap .box3 .big-3 button,
+.contents-wrap .box4 .big-4 button,
+.contents-wrap .box5 .big-5 button,
+.contents-wrap .box6 .big-6 button
 {
   float: right;
   width: 50px;
@@ -97,10 +123,22 @@ header {
 .contents-wrap .box3 .big-3 button{
   border: 3px solid #1a1f26;
 }
+.contents-wrap .box4 .big-4 button{
+  border: 3px solid #fff;
+}
+.contents-wrap .box5 .big-5 button{
+  border: 3px solid #000000;
+}
+.contents-wrap .box6 .big-6 button{
+  border: 3px solid #fff;
+}
 
 .contents-wrap .box1 .big-1 button i,
 .contents-wrap .box2 .big-2 button i,
-.contents-wrap .box3 .big-3 button i
+.contents-wrap .box3 .big-3 button i,
+.contents-wrap .box4 .big-4 button i,
+.contents-wrap .box5 .big-5 button i,
+.contents-wrap .box6 .big-6 button i
 {
   font-size: 30px;
   color: #fe8d02;
@@ -110,4 +148,13 @@ header {
 }
 .contents-wrap .box3 .big-3 button i{
   color: #1a1f26;
+}
+.contents-wrap .box4 .big-4 button i{
+  color: #fff;
+}
+.contents-wrap .box5 .big-5 button i{
+  color: #000;
+}
+.contents-wrap .box6 .big-6 button i{
+  color: #fff;
 }
