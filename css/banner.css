@@ -7,6 +7,25 @@
   background-color: rgb(240, 247, 207);
   font-family: "Noto Sans KR", sans-serif;
 }
+
+.back-page{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100px;
+  height: 50px;
+}
+.back-page a{
+  display: block;
+  width: 100px;
+  height: 50px;
+  font-size: 25px;
+  line-height: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+
 header {
   width: 100%;
   height: 150px;
@@ -64,8 +83,8 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 800px;
-  height: 800px;
+  width: 700px;
+  height: 700px;
   object-fit: cover;
   background-image: url(../images/banner-1.jpg);
   background-size: cover;
@@ -84,13 +103,17 @@ header {
 }
 /*배너 2번째 row*/
 .contents-wrap .box5 .big-5,
-.contents-wrap .box6 .big-6{
+.contents-wrap .box6 .big-6,
+.contents-wrap .box7 .big-7,
+.contents-wrap .box8 .big-8,
+.contents-wrap .box9 .big-9
+{
   position: absolute;
   top: 60%;
   left: 50%;
   transform: translate(-50%);
-  width: 800px;
-  height: 800px;
+  width: 700px;
+  height: 700px;
   object-fit: cover;
   background-image: url(../images/banner-2.jpg);
   background-size: cover;
@@ -101,13 +124,25 @@ header {
 .contents-wrap .box6 .big-6{
   background-image: url(../images/banner-6.jpg);
 }
+.contents-wrap .box7 .big-7{
+  background-image: url(../images/banner-7.jpg);
+}
+.contents-wrap .box8 .big-8{
+  background-image: url(../images/banner-8.jpg);
+}
+.contents-wrap .box9 .big-9{
+  background-image: url(../images/banner-9.jpg);
+}
 
 .contents-wrap .box1 .big-1 button,
 .contents-wrap .box2 .big-2 button,
 .contents-wrap .box3 .big-3 button,
 .contents-wrap .box4 .big-4 button,
 .contents-wrap .box5 .big-5 button,
-.contents-wrap .box6 .big-6 button
+.contents-wrap .box6 .big-6 button,
+.contents-wrap .box7 .big-7 button,
+.contents-wrap .box8 .big-8 button,
+.contents-wrap .box9 .big-9 button
 {
   float: right;
   width: 50px;
@@ -132,13 +167,25 @@ header {
 .contents-wrap .box6 .big-6 button{
   border: 3px solid #fff;
 }
+.contents-wrap .box7 .big-7 button{
+  border: 3px solid #B2D8FF;
+}
+.contents-wrap .box8 .big-8 button{
+  border: 3px solid #E9629C;
+}
+.contents-wrap .box9 .big-9 button{
+  border: 3px solid #fff;
+}
 
 .contents-wrap .box1 .big-1 button i,
 .contents-wrap .box2 .big-2 button i,
 .contents-wrap .box3 .big-3 button i,
 .contents-wrap .box4 .big-4 button i,
 .contents-wrap .box5 .big-5 button i,
-.contents-wrap .box6 .big-6 button i
+.contents-wrap .box6 .big-6 button i,
+.contents-wrap .box7 .big-7 button i,
+.contents-wrap .box8 .big-8 button i,
+.contents-wrap .box9 .big-9 button i
 {
   font-size: 30px;
   color: #fe8d02;
@@ -157,4 +204,13 @@ header {
 }
 .contents-wrap .box6 .big-6 button i{
   color: #fff;
+}
+.contents-wrap .box7 .big-7 button i{
+  color:#B2D8FF;
+}
+.contents-wrap .box8 .big-8 button i{
+  color:#E9629C;
+}
+.contents-wrap .box9 .big-9 button i{
+  color:#fff;
 }
